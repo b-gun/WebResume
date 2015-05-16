@@ -1,0 +1,227 @@
+body > div > div {
+	font-family: LibertineCaps;
+	font-size: 10px;
+	letter-spacing: 2px;
+	width: 40%;
+}
+
+body > div > div:nth-child(1) {
+	width: 100%;
+	font-size: 32px;
+	letter-spacing: 6px;
+	text-align: center;
+	line-height: 50%;
+}
+
+body > div > div:nth-child(2) {
+	float: left;
+}
+
+body > div > div:nth-child(3) {
+	float: right;
+	text-align: right;
+}
+
+body > div {
+	margin-bottom: 40px;
+}
+
+body > span:before {
+	display: block;
+	width: 100%;
+	padding-bottom: 2px;
+	border-bottom: 1px black solid;
+	font-family: LibertineBold;
+	font-weight: bold;
+	content: attr(name);
+}
+
+body > span {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	clear: both;
+}
+
+.left {
+	float: left;
+	width: 60%;
+	clear: none;
+}
+
+.right {
+	float: right;
+	width: 37.5%;
+	clear: none;
+}
+
+div[date]:before {
+	float: right;
+	font-weight: normal;
+	font-style: normal;
+	text-align: right;
+	content: attr(date);
+}
+
+div[date] {
+	float: left;
+	width: 96%;
+}
+
+div[date] + * {
+	clear: both;
+}
+
+div[detail]:after {
+	font-family: LibertineItalic;
+	font-style: normal;
+	font-weight: normal;
+	margin-left: 20px;
+	content: attr(detail);
+}
+
+body > span > div {
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+body > span span {
+	display: block;
+	margin-left: 30px;
+}
+
+body > span > span {
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+
+body > span > *:last-child {
+	margin-bottom: 0;
+}
+
+.compact > div:before {
+	float: left;
+	width: 20%;
+	margin-left: 20px;
+	text-align: left;
+	font-family: LibertineBold;
+	font-weight: bold;
+	content: attr(name);
+}
+
+.compact > div {
+	float: right;
+	width: 100%;
+	font-family: Libertine;
+	font-weight: normal;
+}
+
+.compact > div:last-child {
+	margin-bottom: 20px;
+}
+
+ul {
+	margin: 0px;
+}
+
+slash:before, point:before, gap:before, dash:before{
+	margin: 0px 5px;
+}
+
+slash:before {
+	content: '/';
+}
+
+point:before {
+	content: '\2022';
+}
+
+gap:before {
+	content: '\0000a0';
+}
+
+dash:before {
+	content: '\2013';
+}
+
+b, strong, th {
+	font-family: LibertineBold;
+	font-weight: normal;
+}
+
+tr {
+	height: 25px;
+}
+
+strong {
+	margin-right: 15px;
+}
+
+br + strong {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+
+i {
+	font-family: LibertineItalic;
+	font-style: normal;
+}
+
+
+a {
+	text-decoration: none;
+	color: #000099;
+}
+
+
+table {
+	width: 96%;
+	margin-left: 20px;
+	border: 0;
+}
+
+th, td {
+	text-align: left;
+}
+
+
+body > span:last-child {
+	padding-bottom: 50px;
+}
+
+
+* {
+	font-family: Libertine;
+	font-size: 14px;
+	
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	word-break: hyphenate;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+@font-face {
+	font-family: 'Libertine';
+	src: url('cvfonts/LinLibertine_R.woff');
+}
+
+@font-face {
+	font-family: 'LibertineBold';
+	src: url('cvfonts/LinLibertine_RB.woff');
+}
+
+@font-face {
+	font-family: 'LibertineItalic';
+	src: url('cvfonts/LinLibertine_RI.woff');
+}
+
+@font-face {
+	font-family: 'LibertineCaps';
+	src: url('cvfonts/LinLibertine_aS.woff');
+}
+
